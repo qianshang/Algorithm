@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		04AB2B2A205BBCFA008D51EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B29205BBCFA008D51EC /* main.swift */; };
+		04AB2B31205BBD2E008D51EC /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B30205BBD2E008D51EC /* LinkedList.swift */; };
+		04AB2B33205BE3AE008D51EC /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B32205BE3AE008D51EC /* Stack.swift */; };
+		04AB2B35205F4C44008D51EC /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B34205F4C44008D51EC /* Fibonacci.swift */; };
+		04AB2B37205F5916008D51EC /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B36205F5916008D51EC /* Calculate.swift */; };
+		04AB2B39205F91AF008D51EC /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B38205F91AF008D51EC /* Tree.swift */; };
+		04AB2B3B205FCBF5008D51EC /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B3A205FCBF5008D51EC /* Sort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		04AB2B26205BBCFA008D51EC /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB2B29205BBCFA008D51EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		04AB2B30205BBD2E008D51EC /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		04AB2B32205BE3AE008D51EC /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		04AB2B34205F4C44008D51EC /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		04AB2B36205F5916008D51EC /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		04AB2B38205F91AF008D51EC /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		04AB2B3A205FCBF5008D51EC /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				04AB2B29205BBCFA008D51EC /* main.swift */,
+				04AB2B30205BBD2E008D51EC /* LinkedList.swift */,
+				04AB2B32205BE3AE008D51EC /* Stack.swift */,
+				04AB2B34205F4C44008D51EC /* Fibonacci.swift */,
+				04AB2B36205F5916008D51EC /* Calculate.swift */,
+				04AB2B38205F91AF008D51EC /* Tree.swift */,
+				04AB2B3A205FCBF5008D51EC /* Sort.swift */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -120,6 +138,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AB2B35205F4C44008D51EC /* Fibonacci.swift in Sources */,
+				04AB2B31205BBD2E008D51EC /* LinkedList.swift in Sources */,
+				04AB2B33205BE3AE008D51EC /* Stack.swift in Sources */,
+				04AB2B39205F91AF008D51EC /* Tree.swift in Sources */,
+				04AB2B3B205FCBF5008D51EC /* Sort.swift in Sources */,
+				04AB2B37205F5916008D51EC /* Calculate.swift in Sources */,
 				04AB2B2A205BBCFA008D51EC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

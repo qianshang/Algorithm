@@ -8,5 +8,24 @@
 
 import Foundation
 
-print("Hello, World!")
+/*
+testLinkedList()
 
+print("\n")
+
+testStack()
+
+print("\n")
+
+testFibonacci(to: 10)
+
+print("\n")
+
+testCalculate()
+
+print("\n")
+
+testTree()
+*/
+
+testSort()
