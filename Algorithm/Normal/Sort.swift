@@ -1,13 +1,10 @@
-//
-//  Sort.swift
-//  Algorithm
-//
-//  Created by mac on 2018/3/19.
-//  Copyright © 2018年 mac. All rights reserved.
-//
+/**
+ * 排序
+ */
 
 import Foundation
 
+/// 选择排序
 func sortSelect(with arr: [Int]) -> [Int] {
     let count = arr.count
     var res = arr
@@ -29,6 +26,7 @@ func sortSelect(with arr: [Int]) -> [Int] {
     return res
 }
 
+/// 插入排序
 func sortInsert(with arr: [Int]) -> [Int] {
     var res = arr
     for x in 1..<res.count {
@@ -43,6 +41,7 @@ func sortInsert(with arr: [Int]) -> [Int] {
     return res
 }
 
+///
 func sortShell(with arr: [Int]) -> [Int] {
     var a = arr
     let n = a.count-1
@@ -65,6 +64,7 @@ func sortShell(with arr: [Int]) -> [Int] {
     return a
 }
 
+/// 堆排序
 func sortHeap(with arr: [Int]) -> [Int] {
     // 构建一个大顶堆
     func buildheap( arr: inout [Int]) {
@@ -121,6 +121,7 @@ func sortHeap(with arr: [Int]) -> [Int] {
     return res
 }
 
+/// 归并排序
 func sortMerge(with arr: [Int]) -> [Int] {
     func merge (_ arr:inout [Int], low: Int, mid: Int, high: Int, temp:inout [Int]) {
         var i = low
@@ -178,6 +179,7 @@ func sortMerge(with arr: [Int]) -> [Int] {
     return res
 }
 
+/// 快速排序
 func sortQuick(with arr: [Int]) -> [Int] {
     func partition(_ arr: inout [Int], _ p: Int, _ r: Int) -> Int {
         var i = p - 1
@@ -232,8 +234,8 @@ public func deal(_ name: String, handler: ()->[Int]) {
     
     let res = handler()
     
-    let time = Date().timeIntervalSince(date)
-    print("\(name)\t\t用时:\(time)s\t\t校验:\(check(for: res) ?"✅":"❌")")
+    let time = Date().timeIntervalSince(date) * 1000
+    print(String(format: "%@\t用时:%.1fms\t校验:%@", name, time, check(for: res) ?"✅":"❌"))
 }
 
 func check(for arr: [Int]) -> Bool {

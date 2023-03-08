@@ -14,6 +14,10 @@
 		04AB2B37205F5916008D51EC /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B36205F5916008D51EC /* Calculate.swift */; };
 		04AB2B39205F91AF008D51EC /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B38205F91AF008D51EC /* Tree.swift */; };
 		04AB2B3B205FCBF5008D51EC /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB2B3A205FCBF5008D51EC /* Sort.swift */; };
+		CE34D5C629B4C86400EE6B45 /* Chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5C529B4C86400EE6B45 /* Chapter1.swift */; };
+		CE34D5C829B4D0B000EE6B45 /* Chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5C729B4D0B000EE6B45 /* Chapter2.swift */; };
+		CE34D5CA29B6267E00EE6B45 /* Chapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5C929B6267E00EE6B45 /* Chapter3.swift */; };
+		CE34D5CC29B8C02700EE6B45 /* Chapter4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5CB29B8C02700EE6B45 /* Chapter4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +41,11 @@
 		04AB2B36205F5916008D51EC /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		04AB2B38205F91AF008D51EC /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		04AB2B3A205FCBF5008D51EC /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		CE34D5C229B4C59C00EE6B45 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE34D5C529B4C86400EE6B45 /* Chapter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Chapter1.swift; path = Algorithm/LeetCode/Chapter1.swift; sourceTree = SOURCE_ROOT; };
+		CE34D5C729B4D0B000EE6B45 /* Chapter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2.swift; sourceTree = "<group>"; };
+		CE34D5C929B6267E00EE6B45 /* Chapter3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3.swift; sourceTree = "<group>"; };
+		CE34D5CB29B8C02700EE6B45 /* Chapter4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,7 @@
 		04AB2B1D205BBCFA008D51EC = {
 			isa = PBXGroup;
 			children = (
+				CE34D5C229B4C59C00EE6B45 /* README.md */,
 				04AB2B28205BBCFA008D51EC /* Algorithm */,
 				04AB2B27205BBCFA008D51EC /* Products */,
 			);
@@ -70,6 +80,15 @@
 			isa = PBXGroup;
 			children = (
 				04AB2B29205BBCFA008D51EC /* main.swift */,
+				CE34D5C429B4C5E900EE6B45 /* LeetCode */,
+				CE34D5C329B4C5DA00EE6B45 /* Normal */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		CE34D5C329B4C5DA00EE6B45 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
 				04AB2B30205BBD2E008D51EC /* LinkedList.swift */,
 				04AB2B32205BE3AE008D51EC /* Stack.swift */,
 				04AB2B34205F4C44008D51EC /* Fibonacci.swift */,
@@ -77,7 +96,18 @@
 				04AB2B38205F91AF008D51EC /* Tree.swift */,
 				04AB2B3A205FCBF5008D51EC /* Sort.swift */,
 			);
-			path = Algorithm;
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		CE34D5C429B4C5E900EE6B45 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				CE34D5C529B4C86400EE6B45 /* Chapter1.swift */,
+				CE34D5C729B4D0B000EE6B45 /* Chapter2.swift */,
+				CE34D5C929B6267E00EE6B45 /* Chapter3.swift */,
+				CE34D5CB29B8C02700EE6B45 /* Chapter4.swift */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +137,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
 					04AB2B25205BBCFA008D51EC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -122,6 +153,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 04AB2B1D205BBCFA008D51EC;
 			productRefGroup = 04AB2B27205BBCFA008D51EC /* Products */;
@@ -139,9 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AB2B35205F4C44008D51EC /* Fibonacci.swift in Sources */,
+				CE34D5CA29B6267E00EE6B45 /* Chapter3.swift in Sources */,
+				CE34D5C629B4C86400EE6B45 /* Chapter1.swift in Sources */,
+				CE34D5CC29B8C02700EE6B45 /* Chapter4.swift in Sources */,
 				04AB2B31205BBD2E008D51EC /* LinkedList.swift in Sources */,
 				04AB2B33205BE3AE008D51EC /* Stack.swift in Sources */,
 				04AB2B39205F91AF008D51EC /* Tree.swift in Sources */,
+				CE34D5C829B4D0B000EE6B45 /* Chapter2.swift in Sources */,
 				04AB2B3B205FCBF5008D51EC /* Sort.swift in Sources */,
 				04AB2B37205F5916008D51EC /* Calculate.swift in Sources */,
 				04AB2B2A205BBCFA008D51EC /* main.swift in Sources */,
@@ -165,6 +201,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -172,8 +209,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -182,6 +221,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -222,6 +262,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -229,8 +270,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -239,6 +282,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -260,20 +304,28 @@
 		04AB2B2E205BBCFA008D51EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZZS2UU57R;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N66U6L8849;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		04AB2B2F205BBCFA008D51EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZZS2UU57R;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = N66U6L8849;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

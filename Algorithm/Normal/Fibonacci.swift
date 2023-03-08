@@ -1,10 +1,6 @@
-//
-//  Fibonacci.swift
-//  Algorithm
-//
-//  Created by mac on 2018/3/19.
-//  Copyright © 2018年 mac. All rights reserved.
-//
+/**
+ * 斐波拉契数列
+ */
 
 import Foundation
 

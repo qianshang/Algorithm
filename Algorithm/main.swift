@@ -8,24 +8,26 @@
 
 import Foundation
 
-/*
-testLinkedList()
+protocol AlgorithmTest {
+    
+    func testSolution()
+    
+}
 
-print("\n")
+final class LeetCode {
+    private init() { }
+    
+    private static let allCase: [AlgorithmTest] = [
+//        Chapter1(),
+//        Chapter2(),
+//        Chapter3(),
+        Chapter4(),
+    ]
+    
+    class func test() {
+        allCase.forEach { $0.testSolution() }
+    }
+}
 
-testStack()
+LeetCode.test()
 
-print("\n")
-
-testFibonacci(to: 10)
-
-print("\n")
-
-testCalculate()
-
-print("\n")
-
-testTree()
-*/
-
-testSort()
