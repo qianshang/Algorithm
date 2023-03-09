@@ -18,6 +18,7 @@
 		CE34D5C829B4D0B000EE6B45 /* Chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5C729B4D0B000EE6B45 /* Chapter2.swift */; };
 		CE34D5CA29B6267E00EE6B45 /* Chapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5C929B6267E00EE6B45 /* Chapter3.swift */; };
 		CE34D5CC29B8C02700EE6B45 /* Chapter4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5CB29B8C02700EE6B45 /* Chapter4.swift */; };
+		CE34D5CE29BA24FA00EE6B45 /* Chapter5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D5CD29BA24FA00EE6B45 /* Chapter5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,7 @@
 		CE34D5C729B4D0B000EE6B45 /* Chapter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2.swift; sourceTree = "<group>"; };
 		CE34D5C929B6267E00EE6B45 /* Chapter3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3.swift; sourceTree = "<group>"; };
 		CE34D5CB29B8C02700EE6B45 /* Chapter4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4.swift; sourceTree = "<group>"; };
+		CE34D5CD29BA24FA00EE6B45 /* Chapter5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				CE34D5C729B4D0B000EE6B45 /* Chapter2.swift */,
 				CE34D5C929B6267E00EE6B45 /* Chapter3.swift */,
 				CE34D5CB29B8C02700EE6B45 /* Chapter4.swift */,
+				CE34D5CD29BA24FA00EE6B45 /* Chapter5.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				CE34D5C629B4C86400EE6B45 /* Chapter1.swift in Sources */,
 				CE34D5CC29B8C02700EE6B45 /* Chapter4.swift in Sources */,
 				04AB2B31205BBD2E008D51EC /* LinkedList.swift in Sources */,
+				CE34D5CE29BA24FA00EE6B45 /* Chapter5.swift in Sources */,
 				04AB2B33205BE3AE008D51EC /* Stack.swift in Sources */,
 				04AB2B39205F91AF008D51EC /* Tree.swift in Sources */,
 				CE34D5C829B4D0B000EE6B45 /* Chapter2.swift in Sources */,
