@@ -27,7 +27,7 @@ func sortSelect(with arr: [Int]) -> [Int] {
 }
 
 /// 插入排序
-func sortInsert(with arr: [Int]) -> [Int] {
+public func sortInsert(with arr: [Int]) -> [Int] {
     var res = arr
     for x in 1..<res.count {
         var y = x

@@ -6,38 +6,56 @@ import Foundation
 
 struct Chapter1 {
     
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-//        let ct: Int = nums.count
-//        for i in 0..<(ct - 1) {
-//            let a: Int = nums[i]
-//            for j in (i+1)..<ct {
-//                let b: Int = nums[j]
-//                if a + b == target {
-//                    return [i, j]
-//                } else {
-//                    continue
-//                }
-//            }
-//        }
-//        return []
-        
-//        var map: [Int: Int] = [:]
-//        for i in 0..<nums.count {
-//            let e = target - nums[i]
-//            if let n = map[e] {
-//                return [n, i]
-//            } else {
-//                map[nums[i]] = i
-//            }
-//        }
-//        return []
-        
+    func twoSum_1(_ nums: [Int], _ target: Int) -> [Int] {
+        let ct: Int = nums.count
+        for i in 0..<(ct - 1) {
+            let a: Int = nums[i]
+            for j in (i+1)..<ct {
+                let b: Int = nums[j]
+                if a + b == target {
+                    return [i, j]
+                } else {
+                    continue
+                }
+            }
+        }
+        return []
+    }
+    
+    func twoSum_2(_ nums: [Int], _ target: Int) -> [Int] {
+        var map: [Int: Int] = [:]
+        for i in 0..<nums.count {
+            let e = target - nums[i]
+            if let n = map[e] {
+                return [n, i]
+            } else {
+                map[nums[i]] = i
+            }
+        }
+        return []
+    }
+    
+    func twoSum_3(_ nums: [Int], _ target: Int) -> [Int] {
         var map: [Int: Int] = [:]
         for (i, v) in nums.enumerated() {
-            if let e = map[v] {
+            if let e = map[target - v] {
                 return [e, i]
             } else {
-                map[target - v] = i
+                map[v] = i
+            }
+        }
+        return []
+    }
+    
+    func twoSum_4(_ nums: [Int], _ target: Int) -> [Int] {
+        var map: [Int: Int] = [:]
+        var i = 0
+        while i < nums.count {
+            if let j = map[target - nums[i]] {
+                return [j, i]
+            } else {
+                map[nums[i]] = i
+                i += 1
             }
         }
         return []
@@ -47,25 +65,13 @@ struct Chapter1 {
 
 extension Chapter1: AlgorithmTest {
     func testSolution() {
-        func test(_ arr: [Int], _ t: Int, _ res: [Int]) {
-            let ee = twoSum(arr, t)
-            if ee.isEqual(res) {
-                print(arr, t, "✅")
-            } else {
-                print(arr, t, "❌", ee)
-            }
-        }
+        let nums: [Int] = [2, 7, 11, 15]
+        let target: Int = 9
         
-        test(
-            [2, 7, 11, 15],
-            9,
-            [0, 1]
-        )
-        test(
-            [3, 2, 4],
-            6,
-            [1, 2]
-        )
+        checkTime { twoSum_1(nums, target) }
+        checkTime { twoSum_2(nums, target) }
+        checkTime { twoSum_3(nums, target) }
+        checkTime { twoSum_4(nums, target) }
     }
 }
 

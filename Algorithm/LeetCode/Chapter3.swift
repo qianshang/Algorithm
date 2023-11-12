@@ -24,12 +24,29 @@ struct Chapter3 {
         return ret
     }
     
+    func lengthOfLongestSubstring_1(_ s: String) -> Int {
+        var map: [Character: Int] = [:]
+        var cIdx = 0
+        var i = 0
+        var m = 0
+        for c in s {
+            if let idx = map[c], idx >= cIdx {
+                m = max(m, i - cIdx)
+                cIdx = idx + 1
+            }
+            map[c] = i
+            i += 1
+        }
+        return max(m, i - cIdx)
+    }
+    
 }
 
 extension Chapter3: AlgorithmTest {
     
     func testSolution() {
-        print(lengthOfLongestSubstring("abcabcbb"))
+        checkTime { lengthOfLongestSubstring("abcabcbb") }
+        checkTime { lengthOfLongestSubstring_1("abcabcbb") }
     }
     
 }
